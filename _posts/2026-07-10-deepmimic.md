@@ -8,6 +8,6 @@ image: /assets/images/deepmimic-dragon.png
 image_fit: contain
 ---
 
-Test note for reading and study records on DeepMimic.
+Reading notes for DeepMimic, an example-guided reinforcement learning method for physics-based character skills.
 
 Paper: DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills.
