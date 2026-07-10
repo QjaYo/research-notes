@@ -46,7 +46,7 @@ a:hover {
   margin: 0;
 }
 
-.note-category h2 {
+.note-category > h2 {
   margin: 0;
   padding: 10px 20px 2px;
   color: #555555;
@@ -155,7 +155,7 @@ a:hover {
     padding-left: 16px;
   }
 
-  .note-category h2 {
+  .note-category > h2 {
     padding-right: 16px;
     padding-left: 16px;
   }
