@@ -1,0 +1,23 @@
+---
+layout: default
+title: Research Notes
+---
+
+<section class="intro">
+  <p>This research note is <a href="https://qjayo.github.io/">Kyumin Lee</a>'s research note.</p>
+</section>
+
+<section class="note-list" aria-label="Research notes">
+  {% for post in site.posts %}
+    <article class="note-item">
+      <a class="note-thumb" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
+        <img src="{{ post.image | relative_url }}" alt="" loading="lazy">
+      </a>
+      <div class="note-body">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="note-description">{{ post.description }}</p>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b. %-d, %Y" }}</time>
+      </div>
+    </article>
+  {% endfor %}
+</section>
