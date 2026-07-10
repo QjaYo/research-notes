@@ -1,4 +1,8 @@
-# Qjayo's Research Notes
+---
+layout: home
+---
+
+# Qjayo’s Research Notes
 
 ## Physics-Based Simulation
 
