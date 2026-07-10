@@ -14,7 +14,7 @@ title: Research Notes
   {% for post in character_control_posts %}
     <article class="note-item">
       <a class="note-thumb" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
-        <img src="{{ post.image | relative_url }}" alt="" loading="lazy">
+        <img class="{% if post.image_fit == 'contain' %}contain-thumb{% endif %}" src="{{ post.image | relative_url }}" alt="" loading="lazy">
       </a>
       <div class="note-body">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>

@@ -84,12 +84,18 @@ a:hover {
   object-fit: cover;
 }
 
+.note-thumb img.contain-thumb {
+  object-fit: contain;
+  background: #ffffff;
+}
+
 .note-body h2 {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
   line-height: normal;
   letter-spacing: 0;
+  text-indent: 0;
 }
 
 .note-description {
@@ -98,6 +104,7 @@ a:hover {
   color: #111;
   font-size: 14px;
   line-height: normal;
+  text-indent: 0;
 }
 
 .note-body time,
