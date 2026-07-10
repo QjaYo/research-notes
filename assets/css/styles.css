@@ -37,48 +37,13 @@ a:hover {
   padding: 28px 0 48px;
 }
 
-.page-header {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0 20px 14px;
-}
-
 .intro {
+  padding: 0 20px 14px;
   color: var(--muted);
 }
 
 .intro p {
   margin: 0;
-}
-
-.search-box {
-  flex: 0 0 auto;
-}
-
-.search-box input {
-  width: 180px;
-  height: 28px;
-  padding: 3px 8px;
-  border: 1px solid var(--line);
-  border-radius: 2px;
-  color: var(--text);
-  font: inherit;
-}
-
-.search-box input:focus {
-  border-color: var(--link);
-  outline: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
 }
 
 .note-category > h2 {
@@ -186,19 +151,8 @@ a:hover {
   }
 
   .intro {
-    padding: 0;
-  }
-
-  .page-header {
-    display: grid;
-    gap: 10px;
     padding-right: 16px;
     padding-left: 16px;
-  }
-
-  .search-box,
-  .search-box input {
-    width: 100%;
   }
 
   .note-category > h2 {

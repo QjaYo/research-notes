@@ -3,22 +3,16 @@ layout: default
 title: Research Notes
 ---
 
-<header class="page-header">
-  <section class="intro">
-    <p>This research note is <a href="https://qjayo.github.io/">Kyumin Lee</a>'s research note.</p>
-  </section>
-  <label class="search-box">
-    <span class="visually-hidden">Search notes</span>
-    <input id="note-search" type="search" placeholder="Search" autocomplete="off">
-  </label>
-</header>
+<section class="intro">
+  <p><a href="https://qjayo.github.io/">Kyumin Lee</a>'s research note.</p>
+</section>
 
 <section class="note-category">
   <h2>Physics-Based Character Control</h2>
   <div class="note-list" aria-label="Physics-Based Character Control notes">
   {% assign character_control_posts = site.posts | where: "category", "Physics-Based Character Control" %}
   {% for post in character_control_posts %}
-    <article class="note-item" data-search="{{ post.title | append: ' ' | append: post.category | downcase | escape }}">
+    <article class="note-item">
       <a class="note-thumb" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
         <img class="{% if post.image_fit == 'contain' %}contain-thumb{% endif %}" src="{{ post.image | relative_url }}" alt="" loading="lazy">
       </a>
@@ -33,5 +27,3 @@ title: Research Notes
   {% endfor %}
   </div>
 </section>
-
-<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
