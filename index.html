@@ -7,8 +7,11 @@ title: Research Notes
   <p>This research note is <a href="https://qjayo.github.io/">Kyumin Lee</a>'s research note.</p>
 </section>
 
-<section class="note-list" aria-label="Research notes">
-  {% for post in site.posts %}
+<section class="note-category">
+  <h2>Physics-Based Character Control</h2>
+  <div class="note-list" aria-label="Physics-Based Character Control notes">
+  {% assign character_control_posts = site.posts | where: "category", "Physics-Based Character Control" %}
+  {% for post in character_control_posts %}
     <article class="note-item">
       <a class="note-thumb" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
         <img src="{{ post.image | relative_url }}" alt="" loading="lazy">
@@ -20,4 +23,5 @@ title: Research Notes
       </div>
     </article>
   {% endfor %}
+  </div>
 </section>

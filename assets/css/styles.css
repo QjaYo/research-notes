@@ -46,6 +46,15 @@ a:hover {
   margin: 0;
 }
 
+.note-category h2 {
+  margin: 0;
+  padding: 10px 20px 2px;
+  color: #555555;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+}
+
 .note-list {
   display: grid;
   gap: 0;
@@ -137,6 +146,11 @@ a:hover {
   }
 
   .intro {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .note-category h2 {
     padding-right: 16px;
     padding-left: 16px;
   }

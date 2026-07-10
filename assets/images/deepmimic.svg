@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="368" viewBox="0 0 640 368" role="img" aria-label="DeepMimic preview">
+  <rect width="640" height="368" fill="#eeeeee"/>
+  <rect y="245" width="640" height="123" fill="#d9d9d9"/>
+  <g stroke="#2f2f2f" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" fill="none">
+    <circle cx="320" cy="84" r="28" fill="#2f2f2f" stroke="none"/>
+    <path d="M320 116 L304 174 L284 230"/>
+    <path d="M320 116 L358 166 L406 188"/>
+    <path d="M306 170 L250 158 L214 122"/>
+    <path d="M306 170 L356 222 L382 284"/>
+    <path d="M286 230 L242 284 L206 318"/>
+    <path d="M382 284 L430 318"/>
+  </g>
+  <g fill="#777777">
+    <circle cx="110" cy="310" r="10"/>
+    <circle cx="136" cy="300" r="7"/>
+    <circle cx="160" cy="312" r="11"/>
+  </g>
+</svg>
