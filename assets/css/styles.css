@@ -1,8 +1,9 @@
 :root {
-  --text: #252525;
-  --muted: #676767;
-  --line: #e7e7e7;
-  --link: #1f6fd1;
+  --text: #000000;
+  --muted: #666666;
+  --line: #dddddd;
+  --link: #1772d0;
+  --hover: #f09228;
   --page: #ffffff;
 }
 
@@ -14,9 +15,9 @@ body {
   margin: 0;
   background: var(--page);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.45;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
 }
 
 a {
@@ -25,17 +26,19 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--hover);
+  text-decoration: none;
 }
 
 .page {
-  width: min(1060px, calc(100% - 32px));
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 36px 0 64px;
+  padding: 28px 0 48px;
 }
 
 .intro {
-  margin-bottom: 34px;
+  padding: 0 20px 14px;
   color: var(--muted);
 }
 
@@ -45,23 +48,23 @@ a:hover {
 
 .note-list {
   display: grid;
-  gap: 28px;
+  gap: 0;
 }
 
 .note-item {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 32px;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 0;
   align-items: center;
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--line);
+  padding: 10px 20px;
 }
 
 .note-thumb {
   display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
+  width: 160px;
+  height: 92px;
   overflow: hidden;
+  border-radius: 2px;
   background: #efefef;
 }
 
@@ -73,24 +76,26 @@ a:hover {
 }
 
 .note-body h2 {
-  margin: 0 0 4px;
-  font-size: clamp(1.45rem, 2vw, 2rem);
-  line-height: 1.15;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
   letter-spacing: 0;
 }
 
 .note-description {
-  margin: 0 0 6px;
-  max-width: 760px;
+  margin: 0;
+  max-width: none;
   color: #111;
-  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: normal;
 }
 
 .note-body time,
 .post time {
   color: var(--muted);
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .post {
@@ -120,13 +125,19 @@ a:hover {
 
 @media (max-width: 720px) {
   .page {
-    width: min(100% - 28px, 1060px);
-    padding-top: 28px;
+    width: 100%;
   }
 
   .note-item {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 8px;
     align-items: start;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .intro {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
